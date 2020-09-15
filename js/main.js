@@ -1,6 +1,10 @@
 /*jslint browser */
 
+ var x_media = window.matchMedia("(max-width: 500px)");
+    var y = window.matchMedia("(min-width: 1800px)");
+
 $(document).ready(function() {
+
     //Preloader
     preloaderFadeOutTime = 500;
     function hidePreloader() {
@@ -8,11 +12,25 @@ $(document).ready(function() {
     preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
+
+    setTimeout(function(){
+       
+        $('#details_designer').fadeTo("slow",0.8);
+        $('#details_wife').delay(1500).fadeTo("slow",0.8);
+        $('#details_mother').delay(3000).fadeTo("slow",0.8);
+    }, 1500);
+
+    setTimeout(function(){
+        if (window.location.href.includes("fitted_portfolio.html") || window.location.href.includes("vela.html")){
+              openSidebar();
+        }
+        
+    }, 2500);
 });
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
 
-var y = window.matchMedia("(min-width: 1800px)");
+
 
 if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")
 {
@@ -115,9 +133,9 @@ function myFunction() {
     }
 }
 
-function openSidebar(x, y) {
+function openSidebar() {
 
-    if (x.matches) {
+    if (x_media.matches) {
         document.getElementById("mySidenav")
             .style.width = "150px";
     } else {
@@ -142,10 +160,10 @@ function closeNav() {
 }
 
 function openNav() {
-    var x = window.matchMedia("(max-width: 500px)");
+    //var x = window.matchMedia("(max-width: 500px)");
 
     if (document.getElementById("menubutton") || document.getElementById("menubutton_vela")) {
-        openSidebar(x, y);
+        openSidebar();
     }
 }
 

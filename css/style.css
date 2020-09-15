@@ -269,17 +269,17 @@ main {
 }
 
 #DESIGNER:hover {
-    font-size: 48;
+    transform: scale(1.1, 1.1);
 }
 
 #WIFE:hover {
-    font-size: 48;
+    transform: scale(1.1, 1.1);
 }
 
 
 
 #MOTHER:hover {
-    font-size: 48;
+   transform: scale(1.1, 1.1);
 }
 
 
@@ -382,7 +382,7 @@ main {
 
 #intro.containerfull svg {
     padding-top: 5rem;
-    height: 80%;
+    height: 70%;
 
 }
 
@@ -798,6 +798,33 @@ body.portfolio {
     padding-top: 40px;
 }
 
+
+
+
+.frame {
+width:40%;
+margin:0 auto;
+}
+
+
+.portfolio .frame h1 {
+    color:#00873D;
+    padding-top:4rem;
+    padding-bottom:2rem;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#vela .frame h1{
+   color:#0C71AC; 
+}
+
+.frame iframe{
+    margin-left:1rem;
+  
+
+}
+
 .containerfull {
     background-color: white;
 }
@@ -822,6 +849,11 @@ body.portfolio {
     margin: 0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.work_sections iframe{
+
+height:600px;
 }
 
 .work_sections img {
