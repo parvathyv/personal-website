@@ -15,13 +15,22 @@ $(document).ready(function() {
     }
     hidePreloader();
 
-
-   setTimeout(function(){
+    if (localStorage.getItem("hasCodeRunBefore") === null) {
+        setTimeout(function(){
        
         $('#details_designer').fadeTo("slow",0.8);
         $('#details_wife').delay(1500).fadeTo("slow",0.8);
         $('#details_mother').delay(3000).fadeTo("slow",0.8);
     }, 1500);
+        localStorage.setItem("hasCodeRunBefore", true);
+    }
+
+   /*setTimeout(function(){
+       
+        $('#details_designer').fadeTo("slow",0.8);
+        $('#details_wife').delay(1500).fadeTo("slow",0.8);
+        $('#details_mother').delay(3000).fadeTo("slow",0.8);
+    }, 1500);*/
 
     setTimeout(function(){
         if (window.location.href.includes("fitted_portfolio.html") || window.location.href.includes("vela.html")){
@@ -30,7 +39,9 @@ $(document).ready(function() {
         }
         
     }, 2500);
+
 });
+  
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
 

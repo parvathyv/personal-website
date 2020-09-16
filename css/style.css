@@ -224,7 +224,7 @@ main {
 }
 
 #intro {
-    height: 90vh;
+    height: 85vh;
     background-color: #000813;
     position: relative;
     display: flex;
@@ -602,10 +602,6 @@ input textarea::-ms-input-placeholder {
     color: white;
 }
 
-.covers img {
-    margin-top: 5rem;
-
-}
 
 #about_header.container {
     background-color: #5B0130;
@@ -1036,6 +1032,7 @@ body.about {
     bottom: 20%;
     left: 0;
     color: white;
+    padding-top:4rem;
     padding-bottom: 3rem;
     font-size: 16px;
 }
@@ -1156,7 +1153,9 @@ a.button.resume:visited {
 #sol img {
     padding-top: 0;
 }
-
+a.button.resume{
+    margin-top: 1rem;
+}
 a.button.resume:hover,
 a.button.resume:focus {
     background-color: #EC1D49;
@@ -1398,12 +1397,13 @@ a.button.portfolio_vela:active {
     }
 
     .content_img div {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .grid_work {
         font-size: 1em;
         padding-bottom: 3rem;
+        padding-top:1.5rem;
     }
 
     .contact_information p {
@@ -1419,10 +1419,7 @@ a.button.portfolio_vela:active {
         font-size: 1em;
     }
 
-    .covers img {
-        margin-top: 7rem;
-
-    }
+   
 
     .dropdown-content {
         width: 300px;
@@ -1490,11 +1487,14 @@ a.button.portfolio_vela:active {
     }
 
     #intro.containerfull svg {
-        padding-top: 8rem;
+      padding-top:8rem;
+      padding-right: 8rem;
+      padding-left: 8rem;
+      padding-bottom: 3rem;
     }
 
     #intro .container {
-        height: 85vh;
+        height: 70vh;
         background-color: #000813;
         position: relative;
         display: flex;
@@ -1551,11 +1551,7 @@ a.button.portfolio_vela:active {
         max-width: 100%;
     }
 
-    .covers img {
-        margin-top: 8rem;
-
-    }
-
+    
     .menu a {
         padding: 0.7rem;
     }
@@ -1735,7 +1731,9 @@ a.button.portfolio_vela:active {
         padding: 7rem;
         padding-top: 10rem;
     }
-
+    #intro .container{
+        height:auto;
+    }
     .my_video {
         width: 800px;
         height: 580px;
@@ -1745,10 +1743,7 @@ a.button.portfolio_vela:active {
         font-size: 18px;
     }
 
-    .covers img {
-        margin-top: 10rem;
-
-    }
+   
 
     .grid_work .item:nth-child(2) p,
     .grid_work .item:nth-child(4) p {
@@ -2029,10 +2024,7 @@ margin:0 auto;
     }
 
 
-    .covers img {
-        margin-top: 8rem;
-
-    }
+   
 
     .logo {
 
@@ -2155,7 +2147,7 @@ margin:0 auto;
 
     .about img {
         margin-top: 0;
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 
     .containerfull {
