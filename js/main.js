@@ -1,5 +1,7 @@
 /*jslint browser */
 
+
+
  var x_media = window.matchMedia("(max-width: 500px)");
     var y = window.matchMedia("(min-width: 1800px)");
 
@@ -13,7 +15,8 @@ $(document).ready(function() {
     }
     hidePreloader();
 
-    setTimeout(function(){
+
+   setTimeout(function(){
        
         $('#details_designer').fadeTo("slow",0.8);
         $('#details_wife').delay(1500).fadeTo("slow",0.8);
@@ -22,6 +25,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         if (window.location.href.includes("fitted_portfolio.html") || window.location.href.includes("vela.html")){
+             $('#menubutton_vela').fadeTo("slow",0.2);
               openSidebar();
         }
         
@@ -152,11 +156,15 @@ function openSidebar() {
 function closeNavTimer() {
     document.getElementById("mySidenav")
         .style.width = "0";
+         document.getElementById("menubutton_vela")
+        .style.opacity = "1";    
 }
 
 function closeNav() {
     document.getElementById("mySidenav")
         .style.width = "0";
+    document.getElementById("menubutton_vela")
+        .style.opacity = "1";    
 }
 
 function openNav() {

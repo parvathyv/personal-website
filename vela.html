@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="myicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
@@ -48,7 +48,7 @@
     <main class="portfolio_header">
          <section class="wrapper light">
             <div class="work_sections">
-                <div class="frame">
+                <div id="vela_prototype" class="frame">
                     <h1>Interactive Prototype</h1>
                     <iframe src="https://projects.invisionapp.com/prototype/Vela-Prototype-V-ck58jql0w00286o018ev7dcg3/play/1d50606d" title="Sample">
                     </iframe>
@@ -58,9 +58,10 @@
        
         <div id="mySidenav" class="sidenav vela_sidebar">
             <a class="close_button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="close_button" href="#vela_prototype">Interactive Prototype</a>
             <a class="close_button" href="#vela_work_intro">Intro</a>
             <a class="close_button" href="#vela_context">Context & Objective</a>
-            <a class="close_button" href="#vela_process">Process</a>
+            <a class="close_button menu_button_vela" href="#vela_process">Process</a>
             <a class="close_button" href="#sidebar_research">Research</a>
             <a class="close_button" href="#sidebar_vela_map">Journey Mapping</a>
             <a class="close_button" id="illus_button" href="#sidebar_vela_wireframes">Wireframes</a>
@@ -138,6 +139,7 @@
                     <a data-fancybox="gallery" href="img/vela/swot_vela.png"><img src="img/vela/swot_small.png" alt="SWOT"></a>
                     <a data-fancybox="gallery" href="img/vela/affinity_map.png"><img src="img/vela/affinity_map_small.png" alt="Affinity Map"></a>
                     <a data-fancybox="gallery" href="img/vela/user_persona.png"><img src="img/vela/user_persona_small.png" alt="User Persona"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_vela_map">I carried out detailed research into the subjects of water based sports and weather forecasts, looked at existing apps on the market and conducted user surveys and interviews to gain an understanding of the persona that the app is aimed at.</p>
                     <p>Typical patterns from a perspective of an engaging forecast app - </p>
                     <ul>
@@ -158,6 +160,7 @@
                     <a data-fancybox="gallery" href="img/vela/sitemap_vela.png"><img src="img/vela/sitemap_vela_small.png" alt="SiteMap"></a>
                     <a data-fancybox="gallery" href="img/vela/user_flow.png"><img src="img/vela/user_flow_small.png" alt="User Flow"></a>
                     <a data-fancybox="gallery" href="img/vela/user_journey.png"><img src="img/vela/user_journey_small.png" alt="User Journey"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_vela_wireframes"> I created maps that would help determine user interactions and possible path with app screens, both individually and as a whole. This process also helped me consider the structure and layout that would be necessary for specific screens.</p>
                     <ul>
                         <li class="top_ul"><strong> Understand the complexity of the content </strong> - I was able to gauge if the features I planned to take on were too complex and pare down where necessary. Features like different models and formats of forecasts & Resources like articles and newsletters, while a potential and attractive addition in the future, did not need to be factured into a MVP.</li>
@@ -173,6 +176,7 @@
                     <h2>Sketches & Wireframes</h2>
                     <a data-fancybox="gallery" href="img/vela/sketches_vela.png"><img src="img/vela/sketches_vela_small.png" alt="Sketches"></a>
                     <a data-fancybox="gallery" href="img/vela/wireframe_vela.png"><img src="img/vela/wireframe_vela_small.png" alt="Wireframes"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_vela_testing">Once all the features and functionality were figured out, I began a visualization of the app with quick sketches. In an iterative process, these sketches were digitized into lo-fi wireframes.  Then I continued to refine the IA and components of each screen. This process helped me to - </p>
                     <ul>
                         <li class="top_ul"><strong> Map out the functionality of the app </strong> - I was able to define the <strong>main menu</strong> items at this stage and could get a clear idea of how the information would flow throughout the app as I had gathered from the user flows, journeys and sitemap.</li>
@@ -189,6 +193,7 @@
                     <a data-fancybox="gallery" href="img/vela/usa_test.png"><img src="img/vela/usa_test_small.png" alt="Usability Test"></a>
                     <a data-fancybox="gallery" href="img/vela/test_rep.png"><img src="img/vela/test_rep_small.png" alt="User Report"></a>
                     <a data-fancybox="gallery" href="img/vela/preference_test.png"><img src="img/vela/preference_test_small.png" alt="Preference Test"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_vela_branding">I tested the prototype with users to get a sense of the ease of use and the product experience. I also conducted Preference tests to nail down the design theme. I continued refining the prototype based on user feedback. Testing helped with making needed changes or reaffirmed the path I was following - </p>
                     <ul>
                         <li class="top_ul"><strong> Onboarding </strong> -I needed function oriented onboarding to make the functionality of the app easier to understand for beginners. Given that the nature of forecasting is complex and vast, making that change was an important step in the right direction with usability.</li>
@@ -213,7 +218,9 @@
                     </p>
                     <a data-fancybox="gallery" href="img/vela/logo_vela.png"><img src="img/vela/logo_vela_small.png" alt="Logo"></a>
                     <a data-fancybox="gallery" href="img/vela/type_vela.png"><img src="img/vela/type_vela_small.png" alt="type"></a>
+                
                     <a id="sidebar_vela_illus" data-fancybox="gallery" href="img/vela/color_vela.png"><img src="img/vela/color_vela_small.png" alt="Color"></a>
+                        <p style="font-style: italic"> Click on image to zoom</p>
                 </div>
             </div>
         </section>
@@ -224,6 +231,7 @@
                     <a data-fancybox="gallery" href="img/vela/illus_vela_1.svg"><img src="img/vela/illus_vela_1_small.png" alt="Illus"></a>
                     <a data-fancybox="gallery" href="img/vela/illus_vela_2.svg"><img src="img/vela/illus_vela_2_small.png" alt="Illus"></a>
                     <a data-fancybox="gallery" href="img/vela/illus_vela_3.svg"><img src="img/vela/illus_vela_3_small.png" alt="Illus"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_vela_screens">Illustrations are not a big part of Vela, but can be used sparingly for a touch of lightness as required.</p>
                 </div>
             </div>
@@ -234,7 +242,9 @@
                     <h2> Polished Screens</h2>
                     <a data-fancybox="gallery" href="img/vela/high_screens_1.png"><img src="img/vela/high_screens_1_small.png" alt="Screens"></a>
                     <a data-fancybox="gallery" href="img/vela/high_screens_2.png"><img src="img/vela/high_screens_2_small.png" alt="Screens"></a>
+
                     <a id="sidebar_vela_sol" data-fancybox="gallery" href="img/vela/high_screens_3.png"><img src="img/vela/high_screens_3_small.png" alt="Screens"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                 </div>
             </div>
         </section>

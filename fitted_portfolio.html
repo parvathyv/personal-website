@@ -7,7 +7,7 @@
     <title>Parvathy Iyer UX/UI Designer</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="myicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
     <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
@@ -49,7 +49,7 @@
     <main class="portfolio_header">
         <section class="wrapper light">
             <div class="work_sections">
-                <div class="frame">
+                <div id ="sidebar_prototype"class="frame">
                     <h1>Interactive Prototype</h1>
                     <iframe src="https://projects.invisionapp.com/prototype/Fitted-ck7vex1x0000efk01f8suit50/play/5d98deb3" title="Sample">
                     </iframe>
@@ -58,9 +58,10 @@
         </section>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="close_button" href="#sidebar_prototype">Interactive Prototype</a>
             <a class="close_button" href="#work_intro">Intro</a>
             <a class="close_button" href="#sidebar_context">Context & Objective</a>
-            <a class="close_button" href="#sidebar_process">Process</a>
+            <a class="close_button menu_button" href="#sidebar_process">Process</a>
             <a class="close_button" href="#sidebar_flow">User Flow</a>
             <a class="close_button" href="#sidebar_low">Wireframes</a>
             <a class="close_button" href="#sidebar_mood">Moodboard</a>
@@ -116,6 +117,14 @@
                     <h2>Process</h2>
                     <p>User centered Design Thinking and mobile first design were the main focus of the app.</p>
                     <img src="img/process.svg" alt="process">
+
+                    <ul>
+                        <li>I began with User Research, looking for similar apps on the market, identifying patterns. </li>
+                        <li>I was then able to define my Objective, get an understanding of the type of users I was designing for. </li>
+                        <li>Then I brainstormed using the data I had collected so far to begin rough sketches of what the screens would potentially look like. There was a lot of back and forth between the ideating and wireframing at this stage as the sketches started revealing pros and cons of what I had envisioned for the app so far.</li>
+                        <li>I continued this iterative process of wireframing, branding and prototyping and adapting changes as required from the previous process.</li>
+                        <li>A mid level prototype led to informal, unmoderated testing and this step led to mild adjustments in the define phase and subsequently the wireframes and the prototypes.</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -124,6 +133,7 @@
                 <div class="describe modalbox one">
                     <h2>User Flow</h2>
                     <a data-fancybox="gallery" href="img/fitted/user.png"><img src="img/fitted/user_small.png" loading="lazy" alt="User Flow"></a>
+                    <p style="font-style: italic;font-weight:300"> Click on image to zoom</p>
                     <p>For user flow, I kept track of what exactly a beginner would need from a customized app that was user friendly.</p>
                     <p>Typical patterns from a perspective of an engaging fitness app - </p>
                     <ul>
@@ -142,6 +152,7 @@
                     <h2>Sketches & Low Fidelity Wireframes</h2>
                     <a data-fancybox="gallery" href="img/fitted/user2.png"><img src="img/fitted/user2_small.png" loading="lazy" alt="User Flow"></a>
                     <a data-fancybox="gallery" href="img/fitted/low_fidelity.png"><img src="img/fitted/Wireframe_small.png" alt="Wireframe"></a>
+                    <p style="font-style: italic;font-weight:300"> Click on image to zoom</p>
                     <p id="sidebar_mood">I began with rough sketches based on the user flow. These quick sketches helped greatly with getting the bones of the app in place. Analog sketches were then digitized to low fidelty wireframes. Through this, I began to get a feel for the architecture & design of the app. Without distractions like colors and fonts, I was able to -</p>
                     <ul>
                         <li class="top_ul"><strong> Map out the functionality of the app </strong> - The onboarding section took shape during this phase of design and really came to be a major feature of the app. I got an idea of what the search feature would look like and what primary menu items would be. Wireframing also gave me a idea of which features to prioritize.</li>
@@ -157,6 +168,7 @@
                     <h2>Moodboards</h2>
                     <a data-fancybox="gallery" href="img/fitted/moodboard1.png"><img src="img/fitted/moodboard1_small.png" alt="Moodboard"></a>
                     <a data-fancybox="gallery" href="img/fitted/moodboard2.png"><img src="img/fitted/moodboard2_small.png" alt="Moodboard"></a>
+                    <p style="font-style: italic"> Click on image to zoom</p>
                     <p id="sidebar_brand">I drew inspiration from sources of flat design, bright colors and a desire for a high level of interactivity for the moodboards. My final choice of colors was a blend of the two moodboards.</p>
                 </div>
             </div>
@@ -174,6 +186,7 @@
                     <a data-fancybox="gallery" href="img/fitted/logo.png"><img src="img/fitted/logo_small.png" alt="Logo"></a>
                     <a data-fancybox="gallery" href="img/fitted/type.png"><img src="img/fitted/type_small.png" alt="Type"></a>
                     <a id="sidebar_illus" data-fancybox="gallery" href="img/fitted/color.png"><img src="img/fitted/color_small.png" alt="Color"></a>
+                    <p style="font-style: italic;font-weight:300"> Click on image to zoom</p>
                 </div>
             </div>
         </section>
@@ -184,6 +197,7 @@
                     <a data-fancybox="gallery" href="img/fitted/illus1.png"><img src="img/fitted/illus1_small.png" alt="illus"></a>
                     <a data-fancybox="gallery" href="img/fitted/illus2.png"><img src="img/fitted/illus2_small.png" alt="illus"></a>
                     <a data-fancybox="gallery" href="img/fitted/illus3.png"><img src="img/fitted/illus3_small.png" alt="illus"></a>
+                    <p style="font-style: italic;font-weight:300"> Click on image to zoom</p>
                     <p id="sidebar_high">I used my own illustrations for this app, with influence from flat(ish) design. Fitted makes use of illustrations liberally. I was particular about showcasing my illustrationskills during this project. I was very organized with time in that sense and was able to achieve the goals that I had set. The illustrations are stylized, the animation smooth and most importantly, works with the vibe of the app.</p>
                 </div>
             </div>
@@ -197,6 +211,7 @@
                     <a data-fancybox="gallery" href="img/fitted/scr3.png"><img src="img/fitted/scr3_small.png" alt="Screens"></a>
                     <a data-fancybox="gallery" href="img/fitted/scr4.png"><img src="img/fitted/scr4_small.png" alt="Screens"></a>
                     <a data-fancybox="gallery" href="img/fitted/scr5.png"><img src="img/fitted/scr5_small.png" alt="Screens"></a>
+                    <p style="font-style: italic;font-weight:300"> Click on image to zoom</p>
                     <p id="sidebar_responsive">Some polished screens from the final prototype.</p>
                 </div>
             </div>
@@ -237,7 +252,7 @@
                     <source srcset="img/fitted/feature_4_small.svg" media="(max-width:500px)">
                     <img src="img/fitted/feature_4.png" alt="fitted">
                 </picture>
-                <p>As beginners, users need some hand holding when it comes to exercise routines. Exercise breakdowns, step by step, are available on Fitted. These help users make informed desicions about exercises they would like to pursue and instruction, should they need to refer to it. </p>
+                <p id="gestures">As beginners, users need some hand holding when it comes to exercise routines. Exercise breakdowns, step by step, are available on Fitted. These help users make informed desicions about exercises they would like to pursue and instruction, should they need to refer to it. </p>
             </div>
         </section>
         <section class="wrapper light">

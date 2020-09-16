@@ -10,7 +10,7 @@ body {
     background-color: white
         /*#02305E*/
     ;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     /* Sets the font size to 16px */
     font-weight: 300;
@@ -166,7 +166,7 @@ img {
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    transform: translateX(10px);
 }
 
 .sidenav .closebtn {
@@ -792,17 +792,29 @@ ul {
 
 body.portfolio {
     background-color: #EB560C;
+    font-size:24px;
 }
-
+#vela .menu a{
+    font-size:18px;
+}
 .portfolio_header {
     padding-top: 40px;
+
+}
+#fitted .menu a{
+    font-size:18px;
+}
+#fitted .dropbtn,#vela .dropbtn{
+     font-size:18px;
+
 }
 
-
-
-
+#fitted .dropdown, #vela .dropdown{
+   padding-bottom: 0.9rem;
+     
+}
 .frame {
-width:40%;
+width:50%;
 margin:0 auto;
 }
 
@@ -820,7 +832,7 @@ margin:0 auto;
 }
 
 .frame iframe{
-    margin-left:1rem;
+    margin-left:5rem;
   
 
 }
@@ -1099,7 +1111,7 @@ a.button {
     color: #fff;
     border: 2px solid white;
     display: inline-block;
-    width: 200px;
+    width: 250px;
     border-radius: 15px;
     margin-top: 3rem;
     padding: 10px;
@@ -1418,7 +1430,7 @@ a.button.portfolio_vela:active {
     }
 
     .sidenav a {
-        font-size: 1em;
+        font-size: 18px;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
@@ -1752,6 +1764,28 @@ a.button.portfolio_vela:active {
         padding-top: 1rem;
     }
 
+    .frame {
+width:45%;
+margin:0 auto;
+}
+
+
+.portfolio .frame h1 {
+   
+    margin-left:0.7rem;
+   
+}
+/*
+#vela .frame h1{
+   color:#0C71AC; 
+}
+*/
+.frame iframe{
+    margin-left:0;
+  
+
+}
+
     .scrolldown span {
         opacity: 0;
     }
@@ -1781,6 +1815,8 @@ a.button.portfolio_vela:active {
         font-size: 1.1em;
         padding: 0 0 0 32px;
     }
+
+
 
     .sidenav .closebtn {
 
@@ -1831,7 +1867,7 @@ a.button.portfolio_vela:active {
 
     a.button.portfolio_fitted.double {
 
-        width: 200px;
+        width: 250px;
         margin-left: 0;
 
 
