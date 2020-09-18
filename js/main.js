@@ -2,53 +2,53 @@
 
 
 
- var x_media = window.matchMedia("(max-width: 500px)");
-    var y = window.matchMedia("(min-width: 1800px)");
+var x_media = window.matchMedia("(max-width: 500px)");
+var y = window.matchMedia("(min-width: 1800px)");
 
 $(document).ready(function() {
 
     //Preloader
     preloaderFadeOutTime = 500;
+
     function hidePreloader() {
-    var preloader = $('.spinner-wrapper');
-    preloader.fadeOut(preloaderFadeOutTime);
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
 
     if (localStorage.getItem("hasCodeRunBefore") === null) {
-        setTimeout(function(){
-       
-        $('#details_designer').fadeTo("slow",0.8);
-        $('#details_wife').delay(1500).fadeTo("slow",0.8);
-        $('#details_mother').delay(3000).fadeTo("slow",0.8);
-    }, 1500);
+        setTimeout(function() {
+
+            $('#details_designer').fadeTo("slow", 0.8);
+            $('#details_wife').delay(1500).fadeTo("slow", 0.8);
+            $('#details_mother').delay(3000).fadeTo("slow", 0.8);
+        }, 1500);
         localStorage.setItem("hasCodeRunBefore", true);
     }
 
-   /*setTimeout(function(){
-       
-        $('#details_designer').fadeTo("slow",0.8);
-        $('#details_wife').delay(1500).fadeTo("slow",0.8);
-        $('#details_mother').delay(3000).fadeTo("slow",0.8);
-    }, 1500);*/
-
-    setTimeout(function(){
-        if (window.location.href.includes("fitted_portfolio.html") || window.location.href.includes("vela.html")){
-             $('#menubutton_vela').fadeTo("slow",0.2);
-              openSidebar();
-        }
+    /*setTimeout(function(){
         
+         $('#details_designer').fadeTo("slow",0.8);
+         $('#details_wife').delay(1500).fadeTo("slow",0.8);
+         $('#details_mother').delay(3000).fadeTo("slow",0.8);
+     }, 1500);*/
+
+    setTimeout(function() {
+        if (window.location.href.includes("fitted_portfolio.html") || window.location.href.includes("vela.html")) {
+            $('#menubutton_vela').fadeTo("slow", 0.2);
+            openSidebar();
+        }
+
     }, 2500);
 
 });
-  
+
 /* Toggle between adding and removing the "responsive" class
 to menu when the user clicks on the icon */
 
 
 
-if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")
-{
+if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") {
 
     var my_illus = document.getElementById("my_illus");
     var designer = document.getElementById("DESIGNER");
@@ -165,18 +165,25 @@ function openSidebar() {
 }
 
 function closeNavTimer() {
-    document.getElementById("mySidenav")
-        .style.width = "0";
-         document.getElementById("menubutton_vela")
-        .style.opacity = "1";    
+    if (document.getElementById("mySidenav")) {
+        document.getElementById("mySidenav")
+            .style.width = "0";
+    }
+    if (document.getElementById("menubutton_vela")) {
+        document.getElementById("menubutton_vela")
+            .style.opacity = "1";
+    }
 }
 
 function closeNav() {
-    document.getElementById("mySidenav")
-        .style.width = "0";
-    
-           document.getElementById("menubutton")
-        .style.opacity = "1";     
+    if (document.getElementById("mySidenav")) {
+        document.getElementById("mySidenav")
+            .style.width = "0";
+    }
+    if (document.getElementById("menubutton")) {
+        document.getElementById("menubutton")
+            .style.opacity = "1";
+    }
 }
 
 function openNav() {
@@ -234,7 +241,7 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
-        if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/")  {
+        if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") {
             var my_illus_height = document.getElementById("my_illus")
                 .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")

@@ -28,7 +28,7 @@ body {
     position: absolute;
     top: 48%;
     left: 48%;
-   
+
 }
 
 
@@ -82,56 +82,84 @@ p {
     font-weight: 400;
 }
 
-.x_large_text{
-    font-size:42px;
-    font-weight:700;
-    color:#EB560C;
+
+.x_large_text {
+    font-size: 42px;
+    font-weight: 700;
+    color: #EB560C;
     line-height: 3.5rem;
-    width:70%;
-    margin-left:25%;
-    margin-top:1rem;
+    width: 70%;
+    margin-left: 25%;
+    margin-top: 1rem;
     margin-block-start: 0;
     margin-block-end: 0;
-    border-left:4px;
-    border-left-style:solid;
-    border-left-color:#00873D; 
-    border-radius:20px;
-    
+    border-left: 4px;
+    border-left-style: solid;
+    border-left-color: #00873D;
+    border-radius: 20px;
+
 
 }
-.work_sections .describe p.x_large_text{
-   padding:2rem;
-  
-   margin-top:0;
+
+
+.work_sections .describe p.x_large_text {
+    padding: 2rem;
+
+    margin-top: 0;
 
 }
-.x_header{
-    color:#00873D;
-    border:0;
-    padding:0;
+
+.x_header {
+    color: #00873D;
+    border: 0;
+    padding: 0;
 }
-.work_sections .describe p.x_header{
-   padding:0;
-   margin-top:3rem;
-   margin-bottom: 0.5rem;
+
+.work_sections .describe p.x_header {
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
 
 }
-.right{
-     margin-left:0;
+
+.right {
+    margin-left: 0;
 }
-.list{
-    width:100%;
-    border:0;
-    font-size:28px;
-    line-height:3.5rem;
+
+.list {
+    width: 100%;
+    border: 0;
+    font-size: 28px;
+    line-height: 3.5rem;
     padding-left: 0;
 }
 
-.image_text{
-    font-style: italic;font-weight:300;
+.image_text {
+    font-style: italic;
+    font-weight: 300;
 }
-.header_text{
-font-size:32px;color:#00873D;font-weight:700;}
+
+.header_text {
+    font-size: 32px;
+    color: #00873D;
+    font-weight: 700;
+}
+
+.x_text_vela {
+    color: #238EB6;
+    border-left-color: #0C71AC;
+
+
+}
+
+.x_header_vela {
+    color: #0C71AC;
+}
+
+.full {
+    width: 100%;
+    border: 0;
+}
 
 a {
     color: #ff7f50;
@@ -330,7 +358,7 @@ main {
 
 
 #MOTHER:hover {
-   transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
 }
 
 
@@ -701,7 +729,7 @@ body.work {
 .top_ul {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    
+
 
 }
 
@@ -747,7 +775,7 @@ body.work {
 #work1_fitted h2,
 h3,
 p {
-   
+
     padding: 0 0 0 0;
 }
 
@@ -840,48 +868,43 @@ ul {
 
 body.portfolio {
     background-color: #EB560C;
-    font-size:24px;
+    font-size: 24px;
 }
-#vela .menu a{
-    font-size:22px;
+
+#vela .menu a {
+    font-size: 22px;
 }
+
 .portfolio_header {
     padding-top: 40px;
 
 }
-#fitted .menu a{
-    font-size:22px;
-}
-#fitted .dropbtn,#vela .dropbtn{
-     font-size:22px;
 
+#fitted .menu a {
+    font-size: 22px;
 }
 
-#fitted .dropdown, #vela .dropdown{
-   padding-bottom: 1rem;
-     
-}
 .frame {
-width:50%;
-margin:0 auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 
 .portfolio .frame h1 {
-    color:#00873D;
-    padding-top:4rem;
-    padding-bottom:2rem;
-    margin-left:auto;
-    margin-right:auto;
+    color: #00873D;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#vela .frame h1{
-   color:#0C71AC; 
+#vela .frame h1 {
+    color: #0C71AC;
 }
 
-.frame iframe{
-    margin-left:5rem;
-  
+.frame iframe {
+    margin-left: 5rem;
+
 
 }
 
@@ -911,9 +934,9 @@ margin:0 auto;
     padding-bottom: 1rem;
 }
 
-.work_sections iframe{
+.work_sections iframe {
 
-height:600px;
+    height: 600px;
 }
 
 .work_sections img {
@@ -1084,7 +1107,7 @@ body.about {
     bottom: 20%;
     left: 0;
     color: white;
-    padding-top:4rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     font-size: 16px;
 }
@@ -1205,9 +1228,11 @@ a.button.resume:visited {
 #sol img {
     padding-top: 0;
 }
-a.button.resume{
+
+a.button.resume {
     margin-top: 1rem;
 }
+
 a.button.resume:hover,
 a.button.resume:focus {
     background-color: #EC1D49;
@@ -1272,7 +1297,7 @@ a.button.portfolio_fitted {
 a.button.portfolio_fitted.double {
 
     width: 300px;
- 
+
     border-color: #00873D;
 
 
@@ -1281,7 +1306,8 @@ a.button.portfolio_fitted.double {
 a.button.portfolio_vela.double {
 
     width: 300px;
-    margin-left: 3rem; border-color: #55D6EF;
+    margin-left: 3rem;
+    border-color: #55D6EF;
 
 
 }
@@ -1336,13 +1362,15 @@ a.button.portfolio_vela:active {
 .dropdown {
     /*position: relative;
   display: inline-block;*/
-    padding-bottom: 1.2rem;
+    padding-bottom: 1rem;
     align-self: flex-end;
+
 }
 
 .dropbtn {
     background: transparent;
     color: #fff;
+    font-size: 22px;
     border: none;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -1454,7 +1482,7 @@ a.button.portfolio_vela:active {
     .grid_work {
         font-size: 1em;
         padding-bottom: 3rem;
-        padding-top:1.5rem;
+        padding-top: 1.5rem;
     }
 
     .contact_information p {
@@ -1470,7 +1498,7 @@ a.button.portfolio_vela:active {
         font-size: 1em;
     }
 
-   
+
 
     .dropdown-content {
         width: 300px;
@@ -1538,10 +1566,10 @@ a.button.portfolio_vela:active {
     }
 
     #intro.containerfull svg {
-      padding-top:8rem;
-      padding-right: 8rem;
-      padding-left: 8rem;
-      padding-bottom: 3rem;
+        padding-top: 8rem;
+        padding-right: 8rem;
+        padding-left: 8rem;
+        padding-bottom: 3rem;
     }
 
     #intro .container {
@@ -1602,7 +1630,7 @@ a.button.portfolio_vela:active {
         max-width: 100%;
     }
 
-    
+
     .menu a {
         padding: 0.7rem;
     }
@@ -1778,13 +1806,21 @@ a.button.portfolio_vela:active {
         margin-bottom: -3rem;
     }
 
+    #intro {
+        padding-top: 0;
+
+        height: 60vh;
+    }
+
     #intro.containerfull svg {
         padding: 7rem;
         padding-top: 10rem;
     }
-    #intro .container{
-        height:auto;
+
+    #intro .container {
+        height: auto;
     }
+
     .my_video {
         width: 800px;
         height: 580px;
@@ -1794,7 +1830,42 @@ a.button.portfolio_vela:active {
         font-size: 18px;
     }
 
-   
+    .x_large_text {
+        font-size: 32px;
+
+
+        margin-top: 0.5rem;
+
+
+    }
+
+    .work_sections .describe p.x_large_text {
+        padding: 1rem;
+
+        margin-top: 0;
+
+    }
+
+    .work_sections .describe p.x_header {
+
+        margin-top: 1.5rem;
+
+
+    }
+
+    .list {
+        width: 100%;
+        border: 0;
+        font-size: 24px;
+        line-height: 3rem;
+
+    }
+
+
+    .header_text {
+        font-size: 24px;
+    }
+
 
     .grid_work .item:nth-child(2) p,
     .grid_work .item:nth-child(4) p {
@@ -1811,26 +1882,27 @@ a.button.portfolio_vela:active {
     }
 
     .frame {
-width:45%;
-margin:0 auto;
-}
+        width: 45%;
+        margin: 0 auto;
+    }
 
 
-.portfolio .frame h1 {
-   
-    margin-left:0.7rem;
-   
-}
-/*
+    .portfolio .frame h1 {
+
+        margin-left: 0.7rem;
+
+    }
+
+    /*
 #vela .frame h1{
    color:#0C71AC; 
 }
 */
-.frame iframe{
-    margin-left:0;
-  
+    .frame iframe {
+        margin-left: 0;
 
-}
+
+    }
 
     .scrolldown span {
         opacity: 0;
@@ -1892,7 +1964,7 @@ margin:0 auto;
     }
 
     .dropdown {
-        padding-bottom: 0.70rem;
+        padding-bottom: 0.50rem;
     }
 
     .dropdown-content {
@@ -1907,8 +1979,9 @@ margin:0 auto;
 
 @media screen and (max-width: 768px) {
     #intro {
-        padding-top: 4rem;
+        padding-top: 8rem;
         margin-top: 0;
+        height: 40vh;
     }
 
     a.button.portfolio_fitted.double {
@@ -2075,7 +2148,7 @@ margin:0 auto;
     }
 
 
-   
+
 
     .logo {
 
@@ -2089,9 +2162,50 @@ margin:0 auto;
     }
 
     #intro.containerfull svg {
-        padding-top: 2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
+
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    body.portfolio {
+
+        font-size: 14px;
+    }
+
+    .x_large_text {
+        font-size: 18px;
+
+        line-height: 1.8rem;
+
+
+
+    }
+
+    .work_sections .describe p.x_large_text {
+        padding: 0.75rem;
+
+
+
+    }
+
+    .work_sections .describe p.x_header {
+
+        margin-top: 1rem;
+
+
+    }
+
+    .list {
+
+        font-size: 16px;
+        line-height: 1.5rem;
+
+    }
+
+
+    .header_text {
+        font-size: 20px;
     }
 
 
