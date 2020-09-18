@@ -82,6 +82,57 @@ p {
     font-weight: 400;
 }
 
+.x_large_text{
+    font-size:42px;
+    font-weight:700;
+    color:#EB560C;
+    line-height: 3.5rem;
+    width:70%;
+    margin-left:25%;
+    margin-top:1rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    border-left:4px;
+    border-left-style:solid;
+    border-left-color:#00873D; 
+    border-radius:20px;
+    
+
+}
+.work_sections .describe p.x_large_text{
+   padding:2rem;
+  
+   margin-top:0;
+
+}
+.x_header{
+    color:#00873D;
+    border:0;
+    padding:0;
+}
+.work_sections .describe p.x_header{
+   padding:0;
+   margin-top:3rem;
+   margin-bottom: 0.5rem;
+
+}
+.right{
+     margin-left:0;
+}
+.list{
+    width:100%;
+    border:0;
+    font-size:28px;
+    line-height:3.5rem;
+    padding-left: 0;
+}
+
+.image_text{
+    font-style: italic;font-weight:300;
+}
+.header_text{
+font-size:32px;color:#00873D;font-weight:700;}
+
 a {
     color: #ff7f50;
     text-decoration: none;
@@ -650,6 +701,8 @@ body.work {
 .top_ul {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    
+
 }
 
 #work1_fitted .container {
@@ -694,8 +747,7 @@ body.work {
 #work1_fitted h2,
 h3,
 p {
-    /*margin-block-start: 0.6em;
-    margin-block-end: 0.6em;*/
+   
     padding: 0 0 0 0;
 }
 
@@ -791,22 +843,22 @@ body.portfolio {
     font-size:24px;
 }
 #vela .menu a{
-    font-size:18px;
+    font-size:22px;
 }
 .portfolio_header {
     padding-top: 40px;
 
 }
 #fitted .menu a{
-    font-size:18px;
+    font-size:22px;
 }
 #fitted .dropbtn,#vela .dropbtn{
-     font-size:18px;
+     font-size:22px;
 
 }
 
 #fitted .dropdown, #vela .dropdown{
-   padding-bottom: 0.9rem;
+   padding-bottom: 1rem;
      
 }
 .frame {
@@ -876,7 +928,7 @@ h4 {
 }
 
 .work_sections .describe p {
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 #logo_vela h3 {
@@ -1220,7 +1272,7 @@ a.button.portfolio_fitted {
 a.button.portfolio_fitted.double {
 
     width: 300px;
-    margin-left: 3rem;
+ 
     border-color: #00873D;
 
 
@@ -1229,8 +1281,7 @@ a.button.portfolio_fitted.double {
 a.button.portfolio_vela.double {
 
     width: 300px;
-    margin-left: 3rem;
-    border-color: #55D6EF;
+    margin-left: 3rem; border-color: #55D6EF;
 
 
 }

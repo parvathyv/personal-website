@@ -174,8 +174,9 @@ function closeNavTimer() {
 function closeNav() {
     document.getElementById("mySidenav")
         .style.width = "0";
-    document.getElementById("menubutton_vela")
-        .style.opacity = "1";    
+    
+           document.getElementById("menubutton")
+        .style.opacity = "1";     
 }
 
 function openNav() {
