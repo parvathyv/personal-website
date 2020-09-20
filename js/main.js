@@ -15,7 +15,7 @@ $(document).ready(function() {
         preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
-    if (x_media.matches == false) {
+    if (x_media.matches === false) {
         if (localStorage.getItem("hasCodeRunBefore") === null) {
             setTimeout(function() {
 
