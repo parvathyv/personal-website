@@ -2267,14 +2267,13 @@ a.button.portfolio_vela:active {
     margin-left:0;
     margin-right:0;
 }
-.work_sections iframe{
-    height:600px;
-}
+
 
 .portfolio .frame h1{
     padding:0;
     margin:0;
-    width:500px;padding-bottom:1rem;
+    width:500px;
+    padding-bottom:1rem;
     margin-left:1.5rem;
 }
 
