@@ -15,15 +15,16 @@ $(document).ready(function() {
         preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
+    if (x_media.matches == false) {
+        if (localStorage.getItem("hasCodeRunBefore") === null) {
+            setTimeout(function() {
 
-    if (localStorage.getItem("hasCodeRunBefore") === null) {
-        setTimeout(function() {
-
-            $('#details_designer').fadeTo("slow", 0.8);
-            $('#details_wife').delay(1500).fadeTo("slow", 0.8);
-            $('#details_mother').delay(3000).fadeTo("slow", 0.8);
-        }, 1500);
-        localStorage.setItem("hasCodeRunBefore", true);
+                $('#details_designer').fadeTo("slow", 0.8);
+                $('#details_wife').delay(1500).fadeTo("slow", 0.8);
+                $('#details_mother').delay(3000).fadeTo("slow", 0.8);
+            }, 1500);
+            localStorage.setItem("hasCodeRunBefore", true);
+        }
     }
 
     /*setTimeout(function(){
@@ -152,14 +153,14 @@ function openSidebar() {
 
     if (x_media.matches) {
         document.getElementById("mySidenav")
-            .style.width = "150px";
+            .style.width = "175px";
     } else {
         if (y.matches) {
             document.getElementById("mySidenav")
                 .style.width = "400px";
         } else {
             document.getElementById("mySidenav")
-                .style.width = "250px";
+                .style.width = "300px";
         }
     }
 }
@@ -447,4 +448,37 @@ $(window)
                     }
                 });
         }
+
+
+
     });
+
+/*$(".meditate").on({
+    mouseenter: function () {
+        $('#fitted_anim').hide();
+     /*$('#vela_anim').hide();
+         $('#trip_anim').hide();
+          $('#skyline_anim').hide();*/
+$('#icon_hide').show();
+/*$('#icon1_hide').show();
+    }
+    ,
+    mouseleave: function () {
+        //stuff to do on mouse leave
+    }
+});
+
+$(".ocean").on({
+    mouseenter: function () {
+        $('#vela_anim').hide();
+     /*$('#vela_anim').hide();
+         $('#trip_anim').hide();
+          $('#skyline_anim').hide();
+     $('#icon1_hide').show();
+     /*$('#icon1_hide').show();
+    }
+    ,
+    mouseleave: function () {
+        //stuff to do on mouse leave
+    }
+});*/
