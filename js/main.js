@@ -15,6 +15,8 @@ $(document).ready(function() {
         preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
+   
+
     if (x_media.matches === false) {
         if (localStorage.getItem("hasCodeRunBefore") === null) {
             setTimeout(function() {
@@ -80,7 +82,7 @@ function fade_in_text() {
 }
 
 function fade_out_text() {
-    console.log("inhere");
+    
     document.getElementById("my_illus").style.opacity = "1";
     document.getElementById("details_designer").style.display = "none";
 
@@ -123,12 +125,37 @@ function fade_out_text2() {
 
 
 
+
+
 function myFunction() {
-    var x = document.getElementById("myTopmenu");
+
+    if (window.location.href.includes("fitted.html") || window.location.href == "https://parvathyv.github.io/personal-website/fitted.html") {
+        var x = document.getElementById("myTopmenu");
+    } else {
+        if (window.location.href.includes("fitted_portfolio.html") || window.location.href == "https://parvathyv.github.io/personal-website/fitted_portfolio.html") {
+            var x = document.getElementById("myTopmenu1");
+        } else {
+            if (window.location.href.includes("vela.html") || window.location.href == "https://parvathyv.github.io/personal-website/vela.html") {
+                var x = document.getElementById("myTopmenu2");
+            } else {
+
+                if (window.location.href.includes("skyline.html") || window.location.href == "https://parvathyv.github.io/personal-website/skyline.html") {
+                    var x = document.getElementById("myTopmenu4");
+                } else {
+                    if (window.location.href.includes("the5questiontrip.html") || window.location.href == "https://parvathyv.github.io/personal-website/the5questiontrip.html") {
+                        var x = document.getElementById("myTopmenu3");
+                    }
+                }
+            }
+        }
+    }
+
+
+
     var el;
     // To remove a menu element for Mobile
 
-    if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") {
+    if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/personal-website/") {
 
         if (document.getElementById("index_click")) {
             el = document.getElementById("index_click");
@@ -142,9 +169,13 @@ function myFunction() {
             }
         }
     }
+
+
     if (x.className === "menu") {
+
         x.className += " responsive";
     } else {
+
         x.className = "menu";
     }
 }
@@ -242,7 +273,7 @@ $("a[href*='#']")
 // Animation on scroll
 $(window)
     .scroll(function() {
-        if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/portfolio-website/") {
+        if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/personal-website/") {
             var my_illus_height = document.getElementById("my_illus")
                 .clientHeight;
             var fitted_height = document.getElementById("fitted_anim")
@@ -258,7 +289,6 @@ $(window)
             var offset = 100;
             var tripoffset = 300;
             var expr;
-
 
 
             if (z > (30)) {
@@ -336,11 +366,14 @@ $(window)
                 expr = fitted_height + vela_height + trip_height;
             }
 
+
+
             var i = 1;
             $(".marker")
                 .each(function() {
                     var durationms;
                     if (z > (expr) - tripoffset) {
+
                         $(this)
                             .addClass("hide_anim");
                         durationms = i * 3000;
@@ -442,40 +475,54 @@ $(window)
                     if (z > (expr) - offset) {
                         $(this)
                             .addClass("sanfran_anim");
+
                     } else {
                         $(this)
                             .removeClass("sanfran_anim");
                     }
+
+
                 });
+
         }
 
 
 
     });
 
-/*$(".meditate").on({
-    mouseenter: function () {
+$("#index_footer").on({
+        mouseenter: function() {
+
+        $('.covers').css("background-color", "#000813");
+
         $('#fitted_anim').hide();
-     /*$('#vela_anim').hide();
-         $('#trip_anim').hide();
-          $('#skyline_anim').hide();*/
-$('#icon_hide').show();
-/*$('#icon1_hide').show();
-    }
-    ,
-    mouseleave: function () {
+        $('#vela_anim').hide();
+
+
+        $('#icon_hide').show();
+        $('#icon1_hide').show();
+
+        $('#trip_anim').hide();
+        $('#skyline_anim').hide();
+
+
+
+        $('#icon2_hide').show();
+        $('#icon3_hide').show();
+    },
+    mouseleave: function() {
         //stuff to do on mouse leave
     }
 });
-
-$(".ocean").on({
+/*
+$("#vela_anim").on({
     mouseenter: function () {
         $('#vela_anim').hide();
      /*$('#vela_anim').hide();
          $('#trip_anim').hide();
           $('#skyline_anim').hide();
      $('#icon1_hide').show();
-     /*$('#icon1_hide').show();
+     $('#icon1_hide').show();
     }
     ,
     mouseleave: function () {
