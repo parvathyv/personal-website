@@ -25,10 +25,16 @@ body {
 #icon_hide, #icon1_hide,#icon2_hide,#icon3_hide{
     
     display:none;
-  
+  /*position:absolute;
+  left:-500px;
+  animation: slide 1s forwards;*/
     margin:0 auto;
     
 }
+
+/*@keyframes slide{
+    100% { left: 0; }
+}*/
 
 .spinner {
     width: 120px;
@@ -241,7 +247,7 @@ img {
 .sidenav a {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1em;
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -1378,7 +1384,7 @@ a.button.portfolio_vela:active {
 .dropbtn {
     background: transparent;
     color: #fff;
-    font-size: 20px;
+    font-size: 1em;
     border: none;
     padding-left: 1.2rem;
     padding-right: 1.2rem;
@@ -1537,10 +1543,10 @@ margin-left: 0.7rem;
         font-size:22px;
     }
     .dropdown{
-        padding-bottom: 1.2rem;
+        padding-bottom: 1rem;
     }
     .sidenav a {
-        font-size: 18px;
+        font-size:0.9em;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
@@ -1819,7 +1825,7 @@ margin-left: 0.7rem;
     }
 
     .dropdown {
-        padding-bottom: 0.7rem;
+        padding-bottom: 0.5rem;
     }
 
     .work_sections {
@@ -2275,11 +2281,19 @@ margin-left: 0.7rem;
         display: none;
     }
 
-  
+    .sidenav{
+        padding-top: 30px;
+    }
+
+    #work_skyline .menu a, #trip .menu a {
+             font-size: 13px;
+   
+    }
     #fitted .menu a,
-    #vela .menu a {
+    #vela .menu a{
         font-size: 13px;
-        display:block;
+       
+       
     }
 
     .dropbtn {
@@ -2554,7 +2568,7 @@ margin-left: 0.7rem;
     }
 
     .sidenav {
-        top: 12vh;
+        top: 14vh;
     }
 
     .sidenav a {
@@ -2657,7 +2671,8 @@ margin-left: 0.7rem;
     }
 }
 
- 
+   
+
 
 @keyframes gradientfill {
     0% {

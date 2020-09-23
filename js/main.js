@@ -4,6 +4,11 @@
 
 var x_media = window.matchMedia("(max-width: 500px)");
 var y = window.matchMedia("(min-width: 1800px)");
+var z_media = window.matchMedia("(min-width: 1440px)")&&window.matchMedia("(max-width: 1799px)");
+
+
+
+
 
 $(document).ready(function() {
 
@@ -15,7 +20,7 @@ $(document).ready(function() {
         preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
-   
+
 
     if (x_media.matches === false) {
         if (localStorage.getItem("hasCodeRunBefore") === null) {
@@ -82,7 +87,7 @@ function fade_in_text() {
 }
 
 function fade_out_text() {
-    
+
     document.getElementById("my_illus").style.opacity = "1";
     document.getElementById("details_designer").style.display = "none";
 
@@ -134,6 +139,7 @@ function myFunction() {
     } else {
         if (window.location.href.includes("fitted_portfolio.html") || window.location.href == "https://parvathyv.github.io/personal-website/fitted_portfolio.html") {
             var x = document.getElementById("myTopmenu1");
+            
         } else {
             if (window.location.href.includes("vela.html") || window.location.href == "https://parvathyv.github.io/personal-website/vela.html") {
                 var x = document.getElementById("myTopmenu2");
@@ -156,13 +162,14 @@ function myFunction() {
     // To remove a menu element for Mobile
 
     if (window.location.href.includes("index.html") || window.location.href == "https://parvathyv.github.io/personal-website/") {
-
+         var x = document.getElementById("myTopmenu0");
         if (document.getElementById("index_click")) {
             el = document.getElementById("index_click");
             el.remove();
         }
     } else {
         if (window.location.href.includes("about.html")) {
+            var x = document.getElementById("myTopmenu0a");
             if (document.getElementById("about_click")) {
                 el = document.getElementById("about_click");
                 el.remove();
@@ -186,7 +193,7 @@ function openSidebar() {
         document.getElementById("mySidenav")
             .style.width = "175px";
     } else {
-        if (y.matches) {
+        if ((y.matches) || (z_media.matches)) {
             document.getElementById("mySidenav")
                 .style.width = "400px";
         } else {
@@ -374,6 +381,13 @@ $(window)
                     var durationms;
                     if (z > (expr) - tripoffset) {
 
+                        $('.covers').css("background-color", "#000813");
+                        $('#fitted_anim').hide();
+                        $('#vela_anim').hide();
+                        $('#icon_hide').show();
+                        $('#icon1_hide').show();
+                        $(window).scrollTop(z);
+
                         $(this)
                             .addClass("hide_anim");
                         durationms = i * 3000;
@@ -490,42 +504,20 @@ $(window)
 
     });
 
-$("#index_footer").on({
-        mouseenter: function() {
-
-        $('.covers').css("background-color", "#000813");
-
-        $('#fitted_anim').hide();
-        $('#vela_anim').hide();
-
-
-        $('#icon_hide').show();
-        $('#icon1_hide').show();
-
-        $('#trip_anim').hide();
+$("#index_footer").hover(
+    function() {
+        var z_img = $(window)
+                .scrollTop();
+       $('#trip_anim').hide();
         $('#skyline_anim').hide();
 
 
 
         $('#icon2_hide').show();
         $('#icon3_hide').show();
+         $(window)
+                .scrollTop(z_img);
     },
-    mouseleave: function() {
-        //stuff to do on mouse leave
-    }
-});
-/*
-$("#vela_anim").on({
-    mouseenter: function () {
-        $('#vela_anim').hide();
-     /*$('#vela_anim').hide();
-         $('#trip_anim').hide();
-          $('#skyline_anim').hide();
-     $('#icon1_hide').show();
-     $('#icon1_hide').show();
-    }
-    ,
-    mouseleave: function () {
-        //stuff to do on mouse leave
-    }
-});*/
+    function() {
+        //
+    });
