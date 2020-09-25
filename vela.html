@@ -57,14 +57,14 @@
             </div>
         </section>
         <div id="mySidenav" class="sidenav vela_sidebar">
-            <a class="close_button" href="javascript:void(0)" class="closebtn" onclick="closeNavTimer()">&times;</a>
+            <a class="closebtn" href="javascript:void(0)" class="closebtn" onclick="closeNavTimer()">&times;</a>
             <a class="close_button" href="#vela_prototype">Interactive Prototype</a>
             <a class="close_button" href="#vela_work_intro">Intro</a>
             <a class="close_button" href="#vela_context">Context & Objective</a>
             <a class="close_button menu_button_vela" href="#vela_process">Process</a>
             <a class="close_button" href="#sidebar_research">Research</a>
             <a class="close_button" href="#sidebar_vela_map">Journey Mapping</a>
-            <a class="close_button" id="illus_button" href="#sidebar_vela_wireframes">Wireframes</a>
+            <a class="close_button" id="sidebar_low" href="#sidebar_vela_wireframes">Wireframes</a>
             <a class="close_button" href="#sidebar_vela_testing">Testing</a>
             <a class="close_button" href="#sidebar_vela_branding">Branding</a>
             <a class="close_button" href="#sidebar_vela_illus">Illustrations</a>
@@ -126,7 +126,8 @@
         <section id="vela_process" class="wrapper light">
             <div class="work_sections process">
                 <h2>Process</h2>
-                <img id="vela_research" src="img/vela/process.svg" alt="process">
+                <img  src="img/vela/process.svg" alt="process">
+                <p id="sidebar_research"></p>
             </div>
         </section>
         <section id="research" class="wrapper light">
@@ -139,14 +140,14 @@
                     <a data-fancybox="gallery" href="img/vela/affinity_map.png"><img src="img/vela/affinity_map_small.png" alt="Affinity Map"></a>
                     <a data-fancybox="gallery" href="img/vela/user_persona.png"><img src="img/vela/user_persona_small.png" alt="User Persona"></a>
                     <p class="image_text"> Click on image to zoom</p>
-                    <p id="sidebar_vela_map">I carried out detailed research into the subjects of water based sports and weather forecasts, looked at existing apps on the market and conducted user surveys and interviews to gain an understanding of the persona that the app is aimed at.</p>
+                    <p >I carried out detailed research into the subjects of water based sports and weather forecasts, looked at existing apps on the market and conducted user surveys and interviews to gain an understanding of the persona that the app is aimed at.</p>
                     <p class="x_large_text x_header right list x_header_vela">Typical patterns from a perspective of an engaging forecast app - </p>
                     <ul class="x_large_text right list x_text_vela">
                         <li>Efficient and value adding <strong>onboarding</strong>.</li>
                         <li> <strong>Hyperlocal & Personalized </strong> forecasts - the most value for a water enthusiast is to avail a forecast that is relevant to him/her.</li>
                         <li> <strong>Community</strong> - a social network all its own of fellow water enthusiasts of all levels.</li>
                         <li>The <strong>safety</strong> aspect - to keep safe on the water is the highest priority, irrespective of ability.</li>
-                        <li id="sidebar_low">Quick access to easy to understand visualizations of <strong>forecast charts</strong>.</li>
+                        <li id="sidebar_vela_map">Quick access to easy to understand visualizations of <strong>forecast charts</strong>.</li>
                     </ul>
                 </div>
             </div>
@@ -164,7 +165,7 @@
                     <ul>
                         <li class="top_ul"><span class="header_text x_header_vela"> Understand the complexity of the content </span> - I was able to gauge if the features I planned to take on were too complex and pare down where necessary. Features like <span class="x_large_text right list x_text_vela">different models and formats of forecasts & Resources like articles and newsletters,</span> while a potential and attractive addition in the future, did not need to be factured into a MVP.</li>
                         <li class="top_ul"> <span class="header_text x_header_vela">Understand patterns</span> - I was able to understand and anticipate the <span class="x_large_text right list x_text_vela">cognitive patterns of users</span> in order to create an app that enables this state of flow defined in the user flow. It became clear very quickly while charting user flows that <span class="x_large_text right list x_text_vela">each water sport would require a different set of weather metrics</span> and this would influence layout heavily.</li>
-                        <li class="top_ul"><span class="header_text x_header_vela">High level functionality</span> - A quick snapshot of the functionality was available through user journeys. I got a good idea of how the different features like <span class="x_large_text right list x_text_vela">Community and Forecasts</span> would work at a high level while starting to drill down on specifics.</li>
+                        <li id="sidebar_low" class="top_ul"><span class="header_text x_header_vela">High level functionality</span> - A quick snapshot of the functionality was available through user journeys. I got a good idea of how the different features like <span class="x_large_text right list x_text_vela">Community and Forecasts</span> would work at a high level while starting to drill down on specifics.</li>
                     </ul>
                 </div>
             </div>
@@ -176,11 +177,11 @@
                     <a data-fancybox="gallery" href="img/vela/sketches_vela.png"><img src="img/vela/sketches_vela_small.png" alt="Sketches"></a>
                     <a data-fancybox="gallery" href="img/vela/wireframe_vela.png"><img src="img/vela/wireframe_vela_small.png" alt="Wireframes"></a>
                     <p class="image_text"> Click on image to zoom</p>
-                    <p id="sidebar_vela_testing">Once all the features and functionality were figured out, I began a visualization of the app with quick sketches. In an iterative process, these sketches were digitized into lo-fi wireframes.  Then I continued to refine the IA and components of each screen. This process helped me to - </p>
+                    <p >Once all the features and functionality were figured out, I began a visualization of the app with quick sketches. In an iterative process, these sketches were digitized into lo-fi wireframes.  Then I continued to refine the IA and components of each screen. This process helped me to - </p>
                     <ul>
                         <li class="top_ul"><span class="header_text x_header_vela"> Map out the functionality of the app </span> - I was able to define the <span class="x_large_text right list x_text_vela">Primary Menu</span> items at this stage and could get a clear idea of how the information would flow throughout the app as I had gathered from the user flows, journeys and sitemap.</li>
                         <li class="top_ul"> <span class="header_text x_header_vela">Recognize constraints</span> - Time. With these early sketches, I quickly recognized that executing a high fidelity prototype with good research baked in would require sacrificing the complexity of some of the features, or entire features altogether I had envisioned in the user flow. A <span class="x_large_text right list x_text_vela">MVP was the first goal,</span> sticking to the project brief, while allowing for feedback based improvement before adding bells and whistles. </li>
-                        <li class="top_ul"><span class="header_text x_header_vela">Catch usability problems early</span> - With the rapid sketches, I was starting to realize that the <span class="x_large_text right list x_text_vela">map</span> had to be the focal point of the home page. Any additional information would be easily accessible with a click, but the map and the overlay were enough to give the user a quick snapshot of current conditions in their area.</li>
+                        <li id="sidebar_vela_testing" class="top_ul"><span class="header_text x_header_vela">Catch usability problems early</span> - With the rapid sketches, I was starting to realize that the <span class="x_large_text right list x_text_vela">map</span> had to be the focal point of the home page. Any additional information would be easily accessible with a click, but the map and the overlay were enough to give the user a quick snapshot of current conditions in their area.</li>
                     </ul>
                 </div>
             </div>
@@ -193,11 +194,11 @@
                     <a data-fancybox="gallery" href="img/vela/test_rep.png"><img src="img/vela/test_rep_small.png" alt="User Report"></a>
                     <a data-fancybox="gallery" href="img/vela/preference_test.png"><img src="img/vela/preference_test_small.png" alt="Preference Test"></a>
                     <p class="image_text"> Click on image to zoom</p>
-                    <p id="sidebar_vela_branding">I tested the prototype with users to get a sense of the ease of use and the product experience. I also conducted <span class="x_large_text right list x_text_vela">Preference tests</span> to nail down the design theme. I continued refining the prototype based on user feedback. Testing helped with making needed changes or reaffirmed the path I was following - </p>
+                    <p>I tested the prototype with users to get a sense of the ease of use and the product experience. I also conducted <span class="x_large_text right list x_text_vela">Preference tests</span> to nail down the design theme. I continued refining the prototype based on user feedback. Testing helped with making needed changes or reaffirmed the path I was following - </p>
                     <ul>
                         <li class="top_ul"><span class="header_text x_header_vela"> Onboarding </span> -I needed <span class="x_large_text right list x_text_vela">function oriented onboarding</span> to make the functionality of the app easier to understand for beginners. Given that the nature of forecasting is complex and vast, making that change was an important step in the right direction with usability.</li>
                         <li class="top_ul"> <span class="header_text x_header_vela">Range of values in the Ideal conditions slider</span> - For the user to set up ideal conditions to notified when the forecast encouraged a day out in the water, I made the change to <span class="x_large_text right list x_text_vela">add a range of values</span> for the user to choose instead of single numbers. This was more in tune with the way weather metrics work.</li>
-                        <li class="top_ul"><span class="header_text x_header_vela">Card Grid</span> - My primary concern with the layout was the <span class="x_large_text right list x_text_vela">icon sizes</span>. A/B Testing confirmed to me that big sized icons and <span class="x_large_text right list x_text_vela">card grid layout</span> offered better readability than a columnar approach with smaller icons.</li>
+                        <li id="sidebar_vela_branding" class="top_ul"><span class="header_text x_header_vela">Card Grid</span> - My primary concern with the layout was the <span class="x_large_text right list x_text_vela">icon sizes</span>. A/B Testing confirmed to me that big sized icons and <span class="x_large_text right list x_text_vela">card grid layout</span> offered better readability than a columnar approach with smaller icons.</li>
                     </ul>
                 </div>
             </div>
@@ -298,7 +299,7 @@
                 </ul>
             </div>
         </section>
-        <section id="vela_gestures" class="wrapper light">
+        <section id="sidebar_vela_gestures" class="wrapper light">
             <div class="work_sections">
                 <div class="describe">
                     <h2>Interactions & Gestures</h2>
